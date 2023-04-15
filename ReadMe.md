@@ -1,3 +1,2 @@
 ### ERD
-
-! [alt image](/ERD.png)
+![Alt text](/ERD.png "a title")
