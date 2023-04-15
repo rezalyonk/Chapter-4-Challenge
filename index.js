@@ -1,13 +1,11 @@
-// import atau panggil package2 yg kita mau pakai di aplikasi kita
-const express = require('expresss')
+const http = require('http');
+const port = 3000;
 
-// framework express = framework utk http server
-const app = express();
-const PORT = 3000;
+const server = http.createServer((request, response) => {
+    response.statusCode = 200;
+    response.end();
+})
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
-app.listen(PORT, () => {
-    console.log(`App Running on localhost: ${PORT}`)
+server.listen(port, () => {
+    console.log(`server listening on port ${port}`);
 })
