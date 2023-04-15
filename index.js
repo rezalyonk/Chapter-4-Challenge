@@ -1,11 +1,13 @@
-const http = require('http');
-const port = 3000;
+// import atau panggil package2 yg kita mau pakai di aplikasi kita
+const express = require('express');
 
-const server = http.createServer((request, response) => {
-    response.statusCode = 200;
-    response.end();
-})
+// manggil index.html disini
+// const { public } = require('./public/index.html');
 
-server.listen(port, () => {
-    console.log(`server listening on port ${port}`);
+// framework express = framework utk http server
+const app = express();
+const PORT = 3000;
+
+app.listen(PORT, () => {
+    console.log(`App Running on localhost: ${PORT}`)
 })
