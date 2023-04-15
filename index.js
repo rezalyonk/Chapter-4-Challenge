@@ -15,9 +15,7 @@ app.set("view engine", "html")
 app.use(express.static(path.join(__dirname, "public")))
 
 app.get('/', (req, res) => {
-    res.render("index", {
-        title: "FSW-2"
-    })
+    res.render("index")
 })
 
 app.listen(PORT, () => {
