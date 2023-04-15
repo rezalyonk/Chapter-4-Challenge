@@ -1,3 +1,3 @@
 ### ERD
 
-! (/ERD.png "a title")
+! [alt image](/ERD.png)
