@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
     res.render("index")
 })
 
+// console.log buat liat localhost jalan apa gak
 app.listen(PORT, () => {
     console.log(`App Running on localhost: ${PORT}`)
 })
